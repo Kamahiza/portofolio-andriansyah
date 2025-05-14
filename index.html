@@ -1,0 +1,120 @@
+# Membuat file index.html berdasarkan format HTML portofolio yang sudah dibuat
+html_content = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andriansyah Kamahiza - Data Analyst</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2e86de;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #2e86de;
+      border-bottom: 2px solid #2e86de;
+      padding-bottom: 0.3rem;
+    }
+    a {
+      color: #2e86de;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .contact a {
+      margin-right: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Andriansyah Kamahiza</h1>
+    <p>Data Analyst | Logistics & E-commerce Specialist</p>
+    <p class="contact">
+      📧 <a href="mailto:andriansyahkamahiza@gmail.com">Email</a> |
+      🔗 <a href="https://www.linkedin.com/in/kamahiza/" target="_blank">LinkedIn</a> |
+      💻 <a href="https://github.com/Kamahiza" target="_blank">GitHub</a> |
+      📱 <a href="https://wa.me/6285171612114" target="_blank">WhatsApp</a>
+    </p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah Data Analyst berpengalaman di sektor logistik dan e-commerce, dengan keahlian dalam SQL, Python, dan Power BI. 
+        Fokus saya adalah mendorong efisiensi operasional, pengambilan keputusan berbasis data, serta prediksi permintaan.
+      </p>
+    </section>
+
+    <section>
+      <h2>Keahlian</h2>
+      <ul>
+        <li><strong>Data Analysis & Visualization:</strong> SQL, Python (Pandas, NumPy), Power BI, Tableau</li>
+        <li><strong>ETL & Machine Learning:</strong> Airflow, dbt, Scikit-Learn</li>
+        <li><strong>Database:</strong> PostgreSQL, MySQL, BigQuery</li>
+        <li><strong>Tools:</strong> Looker, SSIS, ERP Systems (SAP, Oracle SCM)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Proyek Pilihan</h2>
+      <ul>
+        <li><a href="https://github.com/Kamahiza/sql_data_science_salaries" target="_blank">SQL Data Science Salaries</a> – Analisis tren gaji data science global.</li>
+        <li><a href="https://github.com/Kamahiza/sql_umkm_jabar" target="_blank">UMKM Jabar SQL</a> – Analisis pertumbuhan UMKM di Jawa Barat.</li>
+        <li><a href="https://github.com/Kamahiza/python-Business_Decision_Research" target="_blank">Python Business Decision Research</a> – Riset strategi bisnis berbasis Python.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pencapaian</h2>
+      <ul>
+        <li>+15% SLA compliance di Shopee Express melalui dashboard Power BI & SQL</li>
+        <li>-10% biaya operasional melalui optimasi rute pengiriman</li>
+        <li>Pengurangan waktu pemrosesan hingga 12% dengan model prediktif</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <p><strong>Universitas Mercubuana</strong> – S1 Teknologi Informasi (2017–2022)</p>
+      <p>Skripsi: "Perbandingan Naïve Bayes dan KNN untuk Analisis Sentimen Shopee"</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
+"""
+
+# Simpan ke file
+file_path = "/mnt/data/index.html"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+file_path
+
